@@ -70,7 +70,7 @@ std::vector<std::vector<double>> customsort(std::vector<std::vector<double>>& de
     return deg;
 }
 
-int obscured_circles(std::vector<double>sumradiuses,std::vector<double>dist1,std::vector<std::vector<double>>distdegsortedbydistance,std::vector<std::vector<std::vector<double>>>relativecircles1,int n){
+int hidden_circles(std::vector<double>sumradiuses,std::vector<double>dist1,std::vector<std::vector<double>>distdegsortedbydistance,std::vector<std::vector<std::vector<double>>>relativecircles1,int n){
     int a = 0;
     int b = 0;
     std::vector<double> track = {0.0,0.0,0.0};
@@ -85,7 +85,7 @@ int obscured_circles(std::vector<double>sumradiuses,std::vector<double>dist1,std
         std::cout << "intersection between circles or observer and circles, choose another radiuses/coordinates" << '\n';
     }
     else {
-        std::cout << "amount of obscured circles is:" << '\n';
+        std::cout << "amount of hidden circles is:" << '\n';
     }
         
         for (int p = 0; p < n - 1; p++){
@@ -225,7 +225,7 @@ int main() {
         return vec2D.empty();}),
                            relativecircles1.end());
     
-    int w = obscured_circles(sumradiuses, dist1, distdegsortedbydistance, relativecircles1, n);
+    int w = hidden_circles(sumradiuses, dist1, distdegsortedbydistance, relativecircles1, n);
     
     std::cout << w << '\n';
 }
