@@ -127,16 +127,16 @@ int main() {
     }
     
     std::vector<double> radiuses;
-    for (double i = 0; i < n + 1; i++) {
+    for (int i = 0; i < n + 1; i++) {
         radiuses.push_back(circles2[i][0]);
     }
-    for (double i = 0; i < n + 1; i++) {
+    for (int i = 0; i < n + 1; i++) {
         radiuses.push_back(radiuses[i]);
     }
     
     std::vector<double> sumradiuses;
-    for (double p = 0; p < radiuses.size()/2; p++){
-        for (double s = 1; s < radiuses.size()/2; s++){
+    for (int p = 0; p < radiuses.size()/2; p++){
+        for (int s = 1; s < radiuses.size()/2; s++){
             sumradiuses.push_back(radiuses[p] + radiuses[p+s]);
         }
     }
