@@ -116,7 +116,7 @@ int main() {
     std::vector<std::vector<double>> circles (n + 1, std::vector<double>(3, 0.0));
     std::cout << "print each circle: radius, x coordinate, y coordinate" << '\n';
     for (int i = 1; i < n + 1; i++) {
-        for (double j = 0; j < 3; j++) {
+        for (int j = 0; j < 3; j++) {
             std::cin >> circles[i][j];
         }
     }
