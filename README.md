@@ -1,6 +1,6 @@
 Hidden-circles counting machine is a program in which I implemented my algorithm for solving a computer science problem (computational geometry visibility problem): In a two-dimensional Cartesian coordinate system, there are arbitrary number of non-overlapping opaque circles with arbitrary radii and coordinates, and is a zero-sized observer at the origin, capable of observing only along straight lines. What is the number of circles hidden from the observer?
 
-Time complexity of an algorithm is O(n^3). 
+Complexity of an algorithm is O(n^3). 
 During the development of an algorithm for solving this problem, my goal was to find all hidden circles regardless of their number, quality, and location, and I encountered the need to classify the possible arrangements of hidden circles in a two-dimensional Cartesian coordinate system: The first group of hidden circles arrangements consists of circles hidden by a single visible circle. The second group of hidden circles arrangements consists of circles hidden by two or more visible circles. 
 
 After launching the program, the input system awaits data entry: the number of circles n, the radius of the first circle, the x-coordinate of the first circle, the y-coordinate of the first circle, the radius of the second circle, the x-coordinate of the second circle, the y-coordinate of the second circle, ... , the radius of the n-th circle, the x-coordinate of the n-th circle, the y-coordinate of the n-th circle.
